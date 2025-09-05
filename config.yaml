@@ -17,7 +17,7 @@ minify:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Sayfullah Sayeb
-  description: "Country Manager of Labartise Bangladesh. Bangladeshi web developer. Specializes in web-based solutions and mobile apps. Learn more on his website."
+  description: "Head of Operations of Labartise. Bangladeshi web developer. Specializes in web-based solutions and mobile apps. Learn more on his website."
   keywords: [Blog, Portfolio, Sayfullah, Sayeb, Sayfullah Sayeb]
   author: Sayfullah Sayeb
   # author: ["Me", "You"] # multiple authors
@@ -76,9 +76,9 @@ params:
   homeInfoParams:
     Title: "As-salamu alaykum,"
     Content: |
-      I'm **Md Sayfullah Sayeb**, but you can call me **Sayeb** or **সাইব** `(Bangla)`. I was born and still reside in Bangladesh. I'm currently the Country Manager of <a href="https://labartise.com/" target="_blank" style="color: #f5a97f;"><strong>Labartise</strong></a> Bangladesh, an Indian startup specializing in web-based operations.
+      I'm **Md Sayfullah Sayeb**, but you can call me **Sayeb** or **সাইব** `(Bangla)`. I was born and still reside in Bangladesh. I'm currently the Head of Operations of <a href="https://labartise.com/" target="_blank" style="color: #f5a97f;"><strong>Labartise</strong></a> Bangladesh, an Indian startup specializing in web-based operations.
 
-      I'm a passionate web developer and tech enthusiast who loves solving web-based problems, building websites, creating mods for games, and making mobile apps.
+      I'm a passionate web developer and tech enthusiast who loves solving web-based problems, building websites, creating game mods, and developing mobile apps.
 
       Outside of work, I enjoy reading, playing video games, and listening to music and audiobooks. I'm interested in privacy, security, and translations, and I also enjoy slow walks on summer nights. Plus, I laugh at my own jokes!
 
