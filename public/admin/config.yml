@@ -23,27 +23,30 @@ collections:
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Date", name: "date", widget: "datetime", default: "{{now}}", format: "YYYY-MM-DD HH:mm:ss"}
       - {label: "Draft", name: "draft", widget: "boolean", default: false}
-      - {label: "Tags", name: "tags", widget: "list", allow_add: true, default: []}
-      - {label: "Featured Image", name: "image", widget: "image"}
-      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Tags", name: "tags", widget: "list", allow_add: true, default: [], required: false}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Description", name: "description", widget: "text", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: true}
 
   # ==================== PROJECTS ====================
   - name: "projects"
     label: "Projects"
-    folder: "content/projects"          # Change if your projects are in a different folder
+    folder: "content/projects"
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
     create: true
     extension: "md"
     format: "frontmatter"
     fields:
       - {label: "Title", name: "title", widget: "string", required: true}
-      - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "Short Description", name: "description", widget: "text"}
-      - {label: "Featured Image", name: "image", widget: "image"}
-      - {label: "Technologies", name: "technologies", widget: "list", allow_add: true}
-      - {label: "Live URL", name: "url", widget: "string"}
-      - {label: "GitHub URL", name: "github", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Date", name: "date", widget: "datetime", required: false}
+      - {label: "Short Description", name: "description", widget: "text", required: false}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Technologies", name: "technologies", widget: "list", allow_add: true, required: false}
+      - {label: "Live URL", name: "live_url", widget: "string", required: false}
+      - {label: "GitHub URL", name: "github", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
 
   # ==================== PHOTOGRAPHY ====================
   - name: "photography"

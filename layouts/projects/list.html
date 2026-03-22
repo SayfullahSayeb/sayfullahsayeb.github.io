@@ -1,0 +1,247 @@
+{{ define "main" }}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<div class="container">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Content }}
+    <div class="page-description">
+      {{ . }}
+    </div>
+    {{ end }}
+  </header>
+
+  <div id="projectGrid" class="grid">
+    {{/* 12 items per page depending on size, maybe standard 12 is good */}}
+    {{ $paginator := .Paginate .Pages.ByDate.Reverse 12 }}
+    
+    {{ range $paginator.Pages }}
+      {{ $image := .Resources.GetMatch (.Params.image | default "*") }}
+      {{ if not $image }}
+        {{ $image = index (.Resources.ByType "image") 0 }}
+      {{ end }}
+
+      <div class="card">
+        <div class="card-image-container">
+          {{ if $image }}
+            {{ $thumbnail := $image.Fit "600x440 q80 webp" }}
+            <img class="card-image loaded" src="{{ $thumbnail.RelPermalink }}" alt="{{ .Title }}" loading="lazy" draggable="false" width="{{ $thumbnail.Width }}" height="{{ $thumbnail.Height }}">
+          {{ end }}
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">{{ .Title }}</h3>
+          <p class="card-description">{{ .Params.description | default .Summary }}</p>
+          <div class="project-footer">
+            {{- with .Params.github -}}
+              {{- if ne . "#" -}}
+              <a href="{{ . }}" class="card-action-icon" target="_blank" title="GitHub" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              {{- end -}}
+            {{- end -}}
+            {{- with .Params.live_url -}}
+              {{- if ne . "#" -}}
+              <a href="{{ . }}" class="card-action-icon" target="_blank" title="Live site" rel="noopener noreferrer">
+                <i class="fa-solid fa-link"></i>
+              </a>
+              {{- end -}}
+            {{- end -}}
+            
+            {{- if and (or .Params.github .Params.live_url) .Params.technologies -}}
+            <span class="card-separator">|</span>
+            {{- end -}}
+
+            {{- range .Params.technologies -}}
+              <span class="card-tag">{{ . }}</span>
+            {{- end -}}
+          </div>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+
+  {{ if gt $paginator.TotalPages 1 }}
+  <div class="pagination">
+    <a href="{{ if $paginator.HasPrev }}{{ $paginator.Prev.URL }}{{ else }}#{{ end }}" 
+       class="pagination-step{{ if not $paginator.HasPrev }} disabled{{ end }}">
+       &larr; Previous
+    </a>
+    <span class="pageInfo">Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}</span>
+    <a href="{{ if $paginator.HasNext }}{{ $paginator.Next.URL }}{{ else }}#{{ end }}" 
+       class="pagination-step{{ if not $paginator.HasNext }} disabled{{ end }}">
+       Next &rarr;
+    </a>
+  </div>
+  {{ end }}
+</div>
+
+<style>
+  .card-image-container img {
+    margin: 0 !important;
+    box-shadow: none !important;
+  }
+  .card-content a {
+    margin: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .container { max-width: 1400px; margin: 0 auto; }
+  .page-description { 
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem; 
+    color: var(--primary); 
+    line-height: 1.8; 
+  }
+
+  .page-description p {
+    margin-bottom: 1rem;
+  }
+
+  .page-description p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .page-description a {
+    color: #f5a97f;
+    text-decoration: none;
+  }
+
+  .page-description a:hover {
+    color: var(--primary);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .card {
+    background: var(--entry);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-image-container {
+    width: 100%;
+    height: 172px;
+    overflow: hidden;
+    background: var(--tertiary);
+  }
+
+  .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  .card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: flex-start;
+  }
+
+  .card-title {
+    font-size: 1.25em;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 12px !important;
+  }
+
+  .card-description {
+    color: var(--secondary);
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    height: 65px;
+    
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .project-footer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+    min-height: 50px;
+    align-content: flex-start;
+  }
+
+  .card-action-icon {
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 1.25em;
+    transition: color 0.2s ease;
+    display: flex;
+    align-items: center;
+  }
+
+  .card-action-icon:hover {
+    color: var(--primary);
+  }
+
+  .card-separator {
+    color: var(--secondary);
+    opacity: 0.4;
+    font-size: 1.1em;
+    user-select: none;
+  }
+
+  .card-tag {
+    background: #2d3a52;
+    color: #60a5fa;
+    padding: 0px 6px;
+    border-radius: 15px;
+    font-size: 0.75em;
+    font-weight: 500;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 30px 0;
+  }
+
+  .pagination-step {
+    background: var(--entry);
+    color: var(--primary);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 0.9em;
+  }
+
+  .pagination-step.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+
+  .pageInfo {
+    color: var(--secondary);
+  }
+
+  @media (max-width: 1024px) {
+    .grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media (max-width: 768px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 640px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+{{ end }}

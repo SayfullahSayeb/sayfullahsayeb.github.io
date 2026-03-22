@@ -34,8 +34,9 @@
             height="{{ $thumbnail.Height }}">
           
           <div class="image-caption">
+            {{ with .Title }}<h3 class="image-title">{{ . }}</h3>{{ end }}
             <p class="image-details">
-              {{ with .Params.location }}{{ . }}, {{ end }}{{ with .Params.date }}{{ .Format "02 Jan 06" }}{{ end }}
+              {{ if .Params.date }}{{ .Date.Format "2006-01-02" }}{{ end }}{{ if and .Params.date .Params.location }} / {{ end }}{{ if .Params.location }}{{ .Params.location }}{{ end }}
             </p>
             {{/* Hidden content passed to the Lightbox only */}}
             {{ with .Content }}
@@ -75,7 +76,29 @@
 
 <style>
   .gallery-container { max-width: 1400px; margin: 0 auto; }
-  .page-description { margin-bottom: 2rem; color: var(--secondary); line-height: 1.6; }
+  .page-description { 
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem; 
+    color: var(--primary); 
+    line-height: 1.8; 
+  }
+
+  .page-description p {
+    margin-bottom: 1rem;
+  }
+
+  .page-description p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .page-description a {
+    color: #f5a97f;
+    text-decoration: none;
+  }
+
+  .page-description a:hover {
+    color: var(--primary); /* Optional: hover effect if underline is gone */
+  }
 
   .gallery {
     display: grid;
@@ -110,13 +133,20 @@
 
   .image-caption {
     background: var(--entry);
+    padding: 8px;
+  }
+
+  .image-title {
+    color: #f5a97f;
+    font-size: 1.05em;
+    font-weight: 600;
+    text-transform: uppercase;
   }
   
   .image-details {
-    font-size: .9em;
+    font-size: 0.85em;
     color: var(--secondary);
     margin: 0 !important;
-    padding: 15px 15px;
   }
 
   .lightbox {
