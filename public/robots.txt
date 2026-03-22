@@ -1,1 +1,3 @@
 User-agent: *
+Disallow:
+Sitemap: https://sayfullahsayeb.github.io/sitemap.xml
