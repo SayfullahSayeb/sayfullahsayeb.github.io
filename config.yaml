@@ -3,6 +3,10 @@ title: Sayfullah Sayeb
 pagination.pagerSize: 10
 theme: PaperMod
 
+caches:
+  images:
+    dir: :cacheDir/images
+
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
