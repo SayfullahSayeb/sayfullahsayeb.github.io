@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Server on Sayfullah Sayeb</title>
-    <link>http://localhost:1313/tags/server/</link>
+    <link>https://sayfullahsayeb.github.io/tags/server/</link>
     <description>Recent content in Server on Sayfullah Sayeb</description>
     <image>
       <title>Sayfullah Sayeb</title>
-      <url>http://localhost:1313/sayfullah-cover.png</url>
-      <link>http://localhost:1313/sayfullah-cover.png</link>
+      <url>https://sayfullahsayeb.github.io/sayfullah-cover.png</url>
+      <link>https://sayfullahsayeb.github.io/sayfullah-cover.png</link>
     </image>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 04 Apr 2024 03:08:00 +0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/server/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://sayfullahsayeb.github.io/tags/server/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>enable shell_exec function to server</title>
-      <link>http://localhost:1313/posts/enable-shell_exec-function-to-server/</link>
+      <link>https://sayfullahsayeb.github.io/posts/enable-shell_exec-function-to-server/</link>
       <pubDate>Thu, 04 Apr 2024 03:08:00 +0600</pubDate>
-      <guid>http://localhost:1313/posts/enable-shell_exec-function-to-server/</guid>
+      <guid>https://sayfullahsayeb.github.io/posts/enable-shell_exec-function-to-server/</guid>
       <description>&lt;p&gt; The shell_exec function allows PHP scripts to execute commands via the shell, which can be useful for certain tasks but also poses security risks if not managed properly&lt;/p&gt;
 &lt;p&gt;edit the php.ini file (on cpanel it’s /usr/local/lib/php.ini)&lt;/p&gt;
 &lt;p&gt;search for the line that says “disable_functions”&lt;/p&gt;
@@ -26,16 +26,16 @@
     </item>
     <item>
       <title>cmd vps connect </title>
-      <link>http://localhost:1313/posts/cmd-vps-connect/</link>
+      <link>https://sayfullahsayeb.github.io/posts/cmd-vps-connect/</link>
       <pubDate>Sat, 23 Mar 2024 17:02:00 +0600</pubDate>
-      <guid>http://localhost:1313/posts/cmd-vps-connect/</guid>
+      <guid>https://sayfullahsayeb.github.io/posts/cmd-vps-connect/</guid>
       <description>&lt;p&gt; ssh u@ip&lt;/p&gt;</description>
     </item>
     <item>
       <title>Phpmyadmin error hide</title>
-      <link>http://localhost:1313/posts/phpmyadmin-error-hide/</link>
+      <link>https://sayfullahsayeb.github.io/posts/phpmyadmin-error-hide/</link>
       <pubDate>Mon, 11 Mar 2024 19:34:00 +0600</pubDate>
-      <guid>http://localhost:1313/posts/phpmyadmin-error-hide/</guid>
+      <guid>https://sayfullahsayeb.github.io/posts/phpmyadmin-error-hide/</guid>
       <description>&lt;p&gt; The best way to turn off Phpmyadmin errors is to go go config.inc.php and set (or comment out ie removing the // lines in front of the value, which is set to &amp;ldquo;ask&amp;rdquo; by default.)&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$cfg[&amp;#39;SendErrorReports&amp;#39;] = &amp;#39;never&amp;#39;;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Hit save and that&amp;rsquo;s it.&lt;/p&gt;
@@ -43,16 +43,16 @@
     </item>
     <item>
       <title>Cyber Panel Install </title>
-      <link>http://localhost:1313/posts/cyber-panel-install/</link>
+      <link>https://sayfullahsayeb.github.io/posts/cyber-panel-install/</link>
       <pubDate>Sun, 25 Feb 2024 02:16:00 +0600</pubDate>
-      <guid>http://localhost:1313/posts/cyber-panel-install/</guid>
+      <guid>https://sayfullahsayeb.github.io/posts/cyber-panel-install/</guid>
       <description></description>
     </item>
     <item>
       <title>low ping aws server </title>
-      <link>http://localhost:1313/posts/low-ping-aws-server/</link>
+      <link>https://sayfullahsayeb.github.io/posts/low-ping-aws-server/</link>
       <pubDate>Thu, 22 Feb 2024 21:24:00 +0600</pubDate>
-      <guid>http://localhost:1313/posts/low-ping-aws-server/</guid>
+      <guid>https://sayfullahsayeb.github.io/posts/low-ping-aws-server/</guid>
       <description>&lt;p&gt;1- Frankfurt (eu-central-1)&lt;/p&gt;
 &lt;p&gt;2- London (eu-west-2)&lt;/p&gt;
 &lt;p&gt;3-  Paris (eu-west-3)&lt;/p&gt;
@@ -62,9 +62,9 @@
     </item>
     <item>
       <title>aapanel Install</title>
-      <link>http://localhost:1313/posts/aapanel-install/</link>
+      <link>https://sayfullahsayeb.github.io/posts/aapanel-install/</link>
       <pubDate>Wed, 21 Feb 2024 13:23:00 +0600</pubDate>
-      <guid>http://localhost:1313/posts/aapanel-install/</guid>
+      <guid>https://sayfullahsayeb.github.io/posts/aapanel-install/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLEXwSYAdPlc6zlvkyzkrfyNKS3YlXECZtmBc_dgiefbRdns4CdcXQkwTlntZwdS6QIO24f2JJfSxcexnEwwTCD_LCn4k-vw9QqDDiQnCkgZY80AS_dTOh6EdLuCTjWm9eTW7McKYoRF9wdFZ8Wn938foM4VNvFZpb3447IfhBE5lB9O_VMJBaA9aJUu-2/s1794/Screenshot_21-2-2024_13296_demo.aapanel.com.jpeg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLEXwSYAdPlc6zlvkyzkrfyNKS3YlXECZtmBc_dgiefbRdns4CdcXQkwTlntZwdS6QIO24f2JJfSxcexnEwwTCD_LCn4k-vw9QqDDiQnCkgZY80AS_dTOh6EdLuCTjWm9eTW7McKYoRF9wdFZ8Wn938foM4VNvFZpb3447IfhBE5lB9O_VMJBaA9aJUu-2/w672-h364/Screenshot_21-2-2024_13296_demo.aapanel.com.jpeg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;1-&lt;br&gt;
 sudo su -&lt;/p&gt;
@@ -87,9 +87,9 @@ sql-mode=NO_ENGINE_SUBSTITUTION&lt;/p&gt;</description>
     </item>
     <item>
       <title>Azure ubunto cpanel</title>
-      <link>http://localhost:1313/posts/azure-ubunto-cpanel/</link>
+      <link>https://sayfullahsayeb.github.io/posts/azure-ubunto-cpanel/</link>
       <pubDate>Fri, 16 Feb 2024 05:12:00 +0600</pubDate>
-      <guid>http://localhost:1313/posts/azure-ubunto-cpanel/</guid>
+      <guid>https://sayfullahsayeb.github.io/posts/azure-ubunto-cpanel/</guid>
       <description>&lt;h2 id=&#34;after-creating-vps&#34;&gt;After creating vps &lt;/h2&gt;
 &lt;p&gt;check blacklist  ip: &lt;a href=&#34;https://mxtoolbox.com/blacklists.aspx&#34;&gt;https://mxtoolbox.com/blacklists.aspx&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;download putty : &lt;a href=&#34;https://putty.org/&#34;&gt;https://putty.org/&lt;/a&gt;&lt;/p&gt;
@@ -111,9 +111,9 @@ systemctl disable NetworkManager&lt;/p&gt;</description>
     </item>
     <item>
       <title>cpanel</title>
-      <link>http://localhost:1313/posts/cpanel/</link>
+      <link>https://sayfullahsayeb.github.io/posts/cpanel/</link>
       <pubDate>Fri, 16 Feb 2024 03:22:00 +0600</pubDate>
-      <guid>http://localhost:1313/posts/cpanel/</guid>
+      <guid>https://sayfullahsayeb.github.io/posts/cpanel/</guid>
       <description>&lt;p&gt;This was brought to you by Frank Moss. For a Step by Step Email to SMS&lt;/p&gt;
 &lt;p&gt;Spamming course, contact me or join my channel for more info.&lt;/p&gt;
 &lt;p&gt;DM: @frank_moss&lt;/p&gt;
