@@ -48,13 +48,16 @@ collections:
   # ==================== PHOTOGRAPHY ====================
   - name: "photography"
     label: "Photography"
-    folder: "content/photography"       # Change if your photos are stored elsewhere
+    folder: "content/photography"
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
     create: true
     extension: "md"
     format: "frontmatter"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "Location", name: "location", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime", default: "{{now}}"}
+      - {label: "Location", name: "location", widget: "string", required: false}
       - {label: "Photo", name: "image", widget: "image", required: true}
-      - {label: "Body (optional caption)", name: "body", widget: "markdown"}
+      - {label: "Caption/Story", name: "body", widget: "markdown", required: false}

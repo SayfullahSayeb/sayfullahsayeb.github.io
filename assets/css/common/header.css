@@ -161,12 +161,14 @@
 
 body {
   font-family: 'Fira Sans', sans-serif;
-  background-image: url('/backgroundPattern.svg');
+  background-color: var(--theme) !important;
+  background-image: url('/backgroundPattern.svg') !important;
+  background-size: auto !important;
+  background-attachment: fixed !important;
+  background-repeat: repeat !important;
 }
 
-.main {
-    background-image: url('/backgroundPattern.svg');
-}
+/* Main width background image restriction removed to allow full page wallpaper */
 
 .nav {
     display: flex;
@@ -219,12 +221,12 @@ button#theme-toggle {
     margin: auto 4px;
 }
 
-body.dark #moon {
+html[data-theme="dark"] #moon {
     vertical-align: middle;
     display: none;
 }
 
-body:not(.dark) #sun {
+html[data-theme="light"] #sun, html:not([data-theme="dark"]) #sun {
     display: none;
 }
 

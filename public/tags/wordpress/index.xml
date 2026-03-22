@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Wordpress on Sayfullah Sayeb</title>
-    <link>https://sayfullahsayeb.github.io/tags/wordpress/</link>
+    <link>http://localhost:1313/tags/wordpress/</link>
     <description>Recent content in Wordpress on Sayfullah Sayeb</description>
     <image>
       <title>Sayfullah Sayeb</title>
-      <url>https://sayfullahsayeb.github.io/sayfullah-cover.png</url>
-      <link>https://sayfullahsayeb.github.io/sayfullah-cover.png</link>
+      <url>http://localhost:1313/sayfullah-cover.png</url>
+      <link>http://localhost:1313/sayfullah-cover.png</link>
     </image>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 04 Jun 2024 01:47:00 +0600</lastBuildDate>
-    <atom:link href="https://sayfullahsayeb.github.io/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Custom Date-Specific Product Badges</title>
-      <link>https://sayfullahsayeb.github.io/posts/custom-date-specific-product-badges/</link>
+      <link>http://localhost:1313/posts/custom-date-specific-product-badges/</link>
       <pubDate>Tue, 04 Jun 2024 01:47:00 +0600</pubDate>
-      <guid>https://sayfullahsayeb.github.io/posts/custom-date-specific-product-badges/</guid>
+      <guid>http://localhost:1313/posts/custom-date-specific-product-badges/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://blogger.googleusercontent.com/img/a/AVvXsEjzQcnP39aCzmn8fidInHmnPwldHpKHtD8cB5KdEbHjFSQ0CN7ol0JIpUsizsMDy02R1hti_YTLFl6bCRiC4B00H6skLr_P88Ju47QQpUVVLjmSov4X1JSpZHJTHUma9DlmLMxa9DHPBuJshfRBNFpPrCdZjurNa-T7lrPGivgvmuO1ouhZ4qzgPM-tkbnt&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://blogger.googleusercontent.com/img/a/AVvXsEjzQcnP39aCzmn8fidInHmnPwldHpKHtD8cB5KdEbHjFSQ0CN7ol0JIpUsizsMDy02R1hti_YTLFl6bCRiC4B00H6skLr_P88Ju47QQpUVVLjmSov4X1JSpZHJTHUma9DlmLMxa9DHPBuJshfRBNFpPrCdZjurNa-T7lrPGivgvmuO1ouhZ4qzgPM-tkbnt&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt; // Add custom fields to WooCommerce backend under General tab&lt;/p&gt;
 &lt;p&gt;add_action( &amp;lsquo;woocommerce_product_options_general_product_data&amp;rsquo;, &amp;lsquo;wpsh_add_text_field_below_sale_price&amp;rsquo; );&lt;/p&gt;
@@ -39,9 +39,9 @@
     </item>
     <item>
       <title>add a country code prefix in billing phone field</title>
-      <link>https://sayfullahsayeb.github.io/posts/add-a-country-code-prefix-in-billing-phone-field/</link>
+      <link>http://localhost:1313/posts/add-a-country-code-prefix-in-billing-phone-field/</link>
       <pubDate>Tue, 04 Jun 2024 01:43:00 +0600</pubDate>
-      <guid>https://sayfullahsayeb.github.io/posts/add-a-country-code-prefix-in-billing-phone-field/</guid>
+      <guid>http://localhost:1313/posts/add-a-country-code-prefix-in-billing-phone-field/</guid>
       <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt; // Add country calling code prefix in woocommerce billing phone  
 // Register WordPress hooks and callbacks for the WooCommerce checkout.  
  add\_action( &amp;#39;wp\_footer&amp;#39;, &amp;#39;wpsh\_add\_callback\_script&amp;#39; );  
@@ -61,9 +61,9 @@
     </item>
     <item>
       <title>Plugin Info </title>
-      <link>https://sayfullahsayeb.github.io/posts/plugin-info/</link>
+      <link>http://localhost:1313/posts/plugin-info/</link>
       <pubDate>Wed, 31 Jan 2024 17:17:00 +0600</pubDate>
-      <guid>https://sayfullahsayeb.github.io/posts/plugin-info/</guid>
+      <guid>http://localhost:1313/posts/plugin-info/</guid>
       <description>&lt;p&gt; Admin and Site Enhancements (ASE)&lt;/p&gt;
 &lt;p&gt;GTranslate&lt;/p&gt;
 &lt;p&gt;WP-Optimize - Clean, Compress, Cache&lt;/p&gt;
