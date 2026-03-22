@@ -3,6 +3,9 @@ title: Sayfullah Sayeb
 pagination.pagerSize: 10
 theme: PaperMod
 
+ignoreLogs:
+  - warning-partial-superfluous-prefix
+
 caches:
   images:
     dir: :cacheDir/images
