@@ -2,7 +2,8 @@
 title: What is an API-based Open Source Headless CMS?
 date: 2026-03-24 21:43:00
 draft: false
-tags: []
+tags:
+  - CMS
 image: ''
 description: ''
 ---
@@ -28,19 +29,28 @@ This makes your site faster, more secure, and flexible compared to traditional C
 Here are the most popular free & self-hosted options:
 
 1. **Strapi**
+
     - Most popular open-source choice.
     - Speciality: Huge plugin ecosystem, easy REST + GraphQL APIs, great for teams and custom projects.
     - Best for: General websites, blogs, and apps.
+
 2. **Payload CMS**
+
     - Speciality: Built with TypeScript, code-first approach, excellent access control and developer experience.
     - Best for: SaaS products, Next.js projects, and developers who love clean code.
+
 3. **Directus**
+
     - Speciality: Turns any existing SQL database into a full CMS instantly.
     - Best for: Projects with large data or when you already have a database.
+
 4. **Ghost**
+
     - Speciality: Beautiful writing editor + built-in membership and newsletter features.
     - Best for: Professional blogs, magazines, and paid content sites.
+
 5. **KeystoneJS**
+
     - Speciality: Strong GraphQL support and flexible schema building.
     - Best for: Highly custom GraphQL-based applications.
 
