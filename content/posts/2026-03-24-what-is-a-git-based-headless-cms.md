@@ -4,6 +4,7 @@ date: 2026-03-24 21:46:00
 draft: false
 tags:
   - CMS
+  - Github
 image: ''
 description: ''
 ---
@@ -29,18 +30,27 @@ This approach is super lightweight and perfect for Jamstack websites.
 Here are the best free options:
 
 1. **TinaCMS**
+
     - Speciality: Real-time visual and inline editing directly on your website.
     - Best for: Astro, Next.js, and modern Jamstack sites.
+
 2. **Sveltia CMS**
+
     - Speciality: Extremely lightweight (just 2 files to set up), modern and clean interface.
     - Best for: Hugo and Astro personal portfolios and blogs (very popular right now).
+
 3. **Sitepins**
+
     - Speciality: Excellent support for Hugo shortcodes and clean, beautiful editor.
     - Best for: Agency-style portfolios and client projects.
+
 4. **Decap CMS** (formerly Netlify CMS)
+
     - Speciality: Very mature and works with almost any static site generator.
     - Best for: Simple static websites.
+
 5. **Pages CMS**
+
     - Speciality: Super simple setup with almost zero configuration.
     - Best for: Beginners and very small personal sites.
 
